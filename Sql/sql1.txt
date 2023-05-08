@@ -1,0 +1,15 @@
+
+SELECT * FROM driver.details;
+insert into  driver.details
+(firstname,middlename,lastname,city,state,country,address1,enrollment_option_date) 
+values 
+(Hari, 'pd', 'dahal','Kathmandu', 'Bagmati','Nepal', 'asdfg', '2023-04-27');
+Select driver_id, firstname, enrollment_option_date from driver.details;
+Select * from driver.details order by driver_id asc, enrollment_option_date desc;
+Select * from driver.details order by driver_id desc;
+select * from driver.details where lastname = 'dahal';
+select driver_id, firstname, middlename, lastname from driver.details where address1 is null;
+select * from driver.details where address1 is not null order by firstname asc;
+select * from driver.details where driver_id = ('1','3','4','5');
+
+
